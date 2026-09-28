@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Student Website</h1>
+        <p>Welcome to my personal website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#learning">My Learning Plan</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">
+            Learn Web Development
+        </a>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Lusungu Ilunga, and I am a student studying Computer Science
+                at Mulungushi University. I am interested in technology and enjoy
+                learning how websites and computer applications are created. I am
+                currently developing my web development skills through ICT251 Web
+                Technologies. My goal is to become more confident in HTML and CSS
+                and to continue learning other web technologies. I believe that
+                regular practice, creativity and patience will help me improve.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Sports</li>
+                <li>Dancing</li>
+                <li>Singing</li>
+            </ul>
+        </section>
+
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Practise HTML structure and semantic elements regularly.</li>
+                <li>Learn and practise CSS layouts, selectors and responsive design.</li>
+                <li>Build small web pages and test them on different screen sizes.</li>
+                <li>Continue learning JavaScript to make websites interactive.</li>
+            </ol>
+
+            <table>
+                <caption>My Weekly Web Learning Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>HTML</td>
+                        <td>Practise semantic HTML elements.</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>CSS</td>
+                        <td>Practise selectors, spacing and layouts.</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Responsive Design</td>
+                        <td>Running websites and webpages.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="Photo showing my first personal activity">
+                    <figcaption>Photo 1: A photo from my personal collection.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="Photo showing my second personal activity">
+                    <figcaption>Photo 2: Another photo from my personal collection.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="Photo showing my third personal activity">
+                    <figcaption>Photo 3: A photo showing one of my interests.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="media" class="content-section">
+            <h2>My Video</Video></h2>
+
+            <h3>My Introduction Video</h3>
+            <video controls>
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p>
+                <strong>Video summary:</strong> In this introduction, I state my name,
+                my programme and one web development skill I hope to learn.
+            </p>
+
+            <h3>My Audio Clip</h3>
+            <audio controls>
+                <source src="videos/voice.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>
+                <strong>Audio description:</strong> This short recording describes
+                one of my hobbies or explains my reason for studying web technologies.
+            </p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>This form is a browser demonstration and does not send data.</p>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" name="topic">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lusungu Ilunga. ICT251 Web Technologies.</p>
+    </footer>
+</body>
+</html>

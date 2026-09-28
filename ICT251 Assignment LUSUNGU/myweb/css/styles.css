@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f7f9;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #183b56;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #102a43;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #486581;
+    outline: 2px solid white;
+}
+
+main {
+    width: min(1100px, 94%);
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid #bcccdc;
+    border-radius: 10px;
+    background: white;
+}
+
+#hobbies {
+    background: #eef6fb;
+}
+
+h2 {
+    color: #183b56;
+    border-bottom: 2px solid #486581;
+    padding-bottom: 0.4rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+figcaption {
+    padding-top: 0.5rem;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 1px solid #829ab1;
+    padding: 0.7rem;
+    text-align: left;
+}
+
+th {
+    background: #d9e2ec;
+}
+
+form {
+    display: grid;
+    gap: 0.7rem;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+    padding: 0.7rem;
+    border: 1px solid #829ab1;
+    border-radius: 5px;
+}
+
+button {
+    background: #183b56;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #486581;
+    outline: 2px solid #102a43;
+}
+
+.note {
+    font-style: italic;
+    color: #52606d;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #183b56;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .content-section {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
